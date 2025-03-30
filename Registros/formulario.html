@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Personas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Registro de Personas</h1>
+        <form action="guardar.php" method="POST">
+            <div class="form-group">
+                <label>Nombre Completo:</label>
+                <input type="text" name="nombre_completo" required>
+            </div>
+            <div class="form-group">
+                <label>Fecha de Nacimiento:</label>
+                <input type="date" name="fecha_nacimiento" required>
+            </div>
+            <div class="form-group">
+                <label>Correo Electrónico:</label>
+                <input type="email" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label>Contraseña:</label>
+                <input type="password" name="contraseña" required>
+            </div>
+            <br>
+            <button type="submit">Registrar</button>
+            
+        </form>
+        <br>
+            <div class="center">
+                <a href="mostrar.php">Registrados</a>
+                </div>
+    </div>
+</body>
+</html>
